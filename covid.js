@@ -1,15 +1,13 @@
  const APIURL ="https://corona.lmao.ninja/v2/countries/india";
-
-  async function getRecords(url){
+ async function getRecords(url){
     const response = await fetch(url);
    const resData = await response.json();
-//    console.log(resData);
 showRecords(resData);
  }
  getRecords(APIURL);
  function showRecords(record)
 {
-   //  console.log(record);
+   
    document.getElementById("main").innerHTML=
 `
 
